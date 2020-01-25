@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pang1';
+  name: string;
+  username: string;
+
+  count = 0;
+  increment(){
+    this.count += 1;
+  }
+  greet(updatedvalue){
+    if(updatedvalue == 'mehek'){
+      alert("welcome back" + this.username);
+    }
+  }
 }
